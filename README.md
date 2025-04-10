@@ -16,4 +16,4 @@ Follow these steps to set up the project on your local machine:
 
 ### **1️⃣ Clone the Repository**  
 ```sh
-git clone https://github.com/YourUsername/DeliveryDefender.git
+git clone https://github.com/AkilHosssain/DeliveryDefender.git
