@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="app.controllers.admin.AdminDashboardController"
+            styleClass="AdminDashboard-root"
+            stylesheets="@../../styles/AdminDashboard.css"
+            prefHeight="600.0" prefWidth="800.0">
+
+    <!-- Top Section: Menu Bar -->
+    <top>
+        <HBox spacing="10" alignment="CENTER_LEFT" styleClass="top-bar">
+            <Label text="Admin Dashboard" fx:id="adminNameLabel" styleClass="dashboard-title"/>
+            <MenuBar styleClass="menu-bar">
+                <Menu text="Menu">
+                    <MenuItem text="Home" onAction="#onHomeClick" styleClass="menu-item"/>
+                    <MenuItem text="Profile" onAction="#onProfileClick" styleClass="menu-item"/>
+                    <MenuItem text="Pending Tasks" onAction="#onPendingTaskClick" styleClass="menu-item"/>
+                    <MenuItem text="In Progress Tasks" onAction="#onInProgressTaskClick" styleClass="menu-item"/>
+                    <MenuItem text="List of Drivers" onAction="#onListOfDriversClick" styleClass="menu-item"/>
+                    <MenuItem text="Logout" onAction="#onLogoutClick" styleClass="menu-item"/>
+                </Menu>
+            </MenuBar>
+        </HBox>
+    </top>
+
+    <!-- Center Section: Tables -->
+    <center>
+        <StackPane fx:id="rootPane" styleClass="full-screen-content">
+            <VBox styleClass="center-container" spacing="20" alignment="TOP_CENTER">
+                <Label text="Pending Tasks" styleClass="section-header"/>
+                <TableView fx:id="pendingTasksTable" minWidth="700">
+                    <columns>
+                        <TableColumn fx:id="orderNumber" text="Order Number"/>
+                        <TableColumn fx:id="customerName" text="Customer Name"/>
+                        <TableColumn fx:id="address" text="Address"/>
+                        <TableColumn fx:id="deliveryDate" text="Delivery Date"/>
+                        <TableColumn fx:id="note" text="Note"/>
+                        <TableColumn fx:id="status" text="Status"/>
+                    </columns>
+                </TableView>
+
+                <Label text="In Progress Tasks" styleClass="section-header"/>
+                <TableView fx:id="inProgressTasksTable" minWidth="700">
+                    <columns>
+                        <TableColumn fx:id="orderNumberProgress" text="Order Number"/>
+                        <TableColumn fx:id="customerNameProgress" text="Customer Name"/>
+                        <TableColumn fx:id="addressProgress" text="Address"/>
+                        <TableColumn fx:id="deliveryDateProgress" text="Delivery Date"/>
+                        <TableColumn fx:id="noteProgress" text="Note"/>
+                        <TableColumn fx:id="statusProgress" text="Status"/>
+                    </columns>
+                </TableView>
+            </VBox>
+        </StackPane>
+    </center>
+
+</BorderPane>

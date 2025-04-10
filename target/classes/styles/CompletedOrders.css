@@ -1,0 +1,76 @@
+/* Root Layout Styling */
+.root {
+    -fx-font-family: 'Segoe UI', sans-serif;
+    -fx-background-color: #f9f9fb;
+}
+
+/* Header Styles */
+.header-container {
+    -fx-background-color: linear-gradient(to right, #fc7341, #ff4b2b);
+    -fx-padding: 25px;
+    -fx-alignment: center;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0.3, 0, 2);
+}
+
+.header-label {
+    -fx-font-size: 26px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+/* Back Button */
+.back-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 8 15;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-border-color: white;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+}
+
+.back-button:hover {
+    -fx-background-color: #ff4b2b;
+}
+
+/* Center Content */
+.center-container {
+    -fx-padding: 20;
+    -fx-background-color: #ffffff;
+    -fx-spacing: 15;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.05), 10, 0.3, 0, 1);
+}
+
+/* Table Styling */
+.table-view {
+    -fx-background-color: white;
+    -fx-border-radius: 8px;
+    -fx-padding: 10px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 5, 0, 0, 2);
+}
+
+.table-column {
+    -fx-font-size: 14px;
+    -fx-text-fill: #333;
+    -fx-background-color: #eee;
+}
+
+/* Table Row Hover Effect */
+.table-row-cell:hover {
+    -fx-background-color: #ff4b2b;
+    -fx-text-fill: white;
+}
+
+/* Scrollbar Styling */
+.scroll-bar:vertical, .scroll-bar:horizontal {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #ccc;
+    -fx-background-radius: 4;
+}

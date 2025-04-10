@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="app.controllers.customer.CustomerDashboardController"
+            stylesheets="@../../styles/CustomerDashboard.css"
+            prefHeight="700.0" prefWidth="1000.0">
+
+    <!-- Top Header -->
+    <top>
+        <StackPane styleClass="header-container">
+            <Label fx:id="contentLabel" text="Welcome to Your Dashboard!" styleClass="header-label"/>
+        </StackPane>
+    </top>
+
+    <!-- Left Navigation Menu -->
+    <left>
+        <VBox spacing="10" alignment="TOP_CENTER" styleClass="menu-container">
+            <padding>
+                <Insets top="15" right="15" bottom="15" left="15"/>
+            </padding>
+            <Button text="Home" onAction="#onHomeClick" styleClass="menu-button"/>
+            <Button text="Active Orders" onAction="#onOrderClick" styleClass="menu-button"/>
+            <Button text="Order History" onAction="#onHistoryClick" styleClass="menu-button"/>
+            <Button text="Create order" onAction="#onCreateOrderClick" styleClass="menu-button"/>
+            <Button text="Account Summary" onAction="#onAccountClick" styleClass="menu-button"/>
+            <Button text="Feedback" onAction="#onFeedbackClick" styleClass="menu-button"/>
+        </VBox>
+    </left>
+
+    <!-- Center Main Content -->
+    <center>
+        <VBox spacing="20" alignment="TOP_CENTER" styleClass="center-container">
+            <padding>
+                <Insets top="20" right="20" bottom="20" left="20"/>
+            </padding>
+
+            <!-- Active Orders Summary -->
+            <Label text="Active Orders Summary" styleClass="section-header"/>
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <Label text="Order Number:" styleClass="info-label"/>
+                <Label fx:id="orderNumberLabel" text="Loading..." styleClass="info-value"/>
+            </HBox>
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <Label text="ETA Countdown:" styleClass="info-label"/>
+                <Label fx:id="etaCountdownLabel" text="Calculating..." styleClass="info-value"/>
+            </HBox>
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <Label text="Delivery Status:" styleClass="info-label"/>
+                <Label fx:id="statusLabel" text="Loading..." styleClass="info-value"/>
+            </HBox>
+
+            <!-- Driver Details -->
+            <Label text="Driver Information" styleClass="section-header"/>
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <Label text="Driver Name:" styleClass="info-label"/>
+                <Label fx:id="driverNameLabel" text="Loading..." styleClass="info-value"/>
+            </HBox>
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <Label text="Driver Contact:" styleClass="info-label"/>
+                <Label fx:id="driverContactLabel" text="Loading..." styleClass="info-value"/>
+            </HBox>
+
+            <!-- Delivery Address -->
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <Label text="Delivery Address:" styleClass="info-label"/>
+                <Label fx:id="deliveryAddressLabel" text="Loading..." styleClass="info-value"/>
+            </HBox>
+
+            <!-- Quick Actions -->
+            <Label text="Quick Actions" styleClass="section-header"/>
+            <HBox spacing="15" alignment="CENTER">
+                <Button text="Track Order" onAction="#onTrackOrderClick" styleClass="action-button"/>
+                <Button text="Cancel Order" onAction="#onCancelOrderClick" styleClass="action-button"/>
+            </HBox>
+
+            <!-- Notifications -->
+            <Label text="Notifications" styleClass="section-header"/>
+            <TextArea fx:id="notificationArea" prefRowCount="3" editable="false" wrapText="true"/>
+
+            <!-- Promotions -->
+            <Label text="Promotions" styleClass="section-header"/>
+            <Label fx:id="promotionLabel" text="No active promotions" styleClass="info-value"/>
+
+            <!-- Feedback Form -->
+            <Label text="Feedback" styleClass="section-header"/>
+            <TextArea fx:id="feedbackArea" promptText="Write your feedback here..." prefRowCount="3"/>
+            <Button text="Submit Feedback" onAction="#onSubmitFeedbackClick" styleClass="action-button"/>
+
+        </VBox>
+    </center>
+
+</BorderPane>

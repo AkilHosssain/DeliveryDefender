@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="app.controllers.admin.PendingTasksController"
+            stylesheets="@../../styles/pending_tasks.css">
+
+    <VBox spacing="10" alignment="TOP_CENTER" AnchorPane.topAnchor="0.0" AnchorPane.leftAnchor="0.0"
+          AnchorPane.rightAnchor="0.0" AnchorPane.bottomAnchor="0.0">
+        <Label text="Pending Tasks" styleClass="title-label"/>
+
+        <TableView fx:id="tasksTable" VBox.vgrow="ALWAYS">
+            <columns>
+                <TableColumn fx:id="orderNumber" text="Order Number" prefWidth="80"/>
+                <TableColumn fx:id="customerName" text="Customer Name" prefWidth="120"/>
+                <TableColumn fx:id="address" text="Address" prefWidth="180"/>
+                <TableColumn fx:id="phoneNumber" text="Phone" prefWidth="80"/>
+                <TableColumn fx:id="deliveryDate" text="Delivery date" prefWidth="100"/>
+                <TableColumn fx:id="time" text="Time" prefWidth="100"/>
+                <TableColumn fx:id="description" text="Customer Note" prefWidth="150"/>
+                <TableColumn fx:id="driver" text="Assigned Driver" prefWidth="120"/>
+                <TableColumn fx:id="status" text="Order Status" prefWidth="100"/>
+            </columns>
+        </TableView>
+
+        <Button text="Back To DashBoard" onAction="#onBackClick" styleClass="back-button"/>
+    </VBox>
+
+</AnchorPane>

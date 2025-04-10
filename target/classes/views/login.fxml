@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            stylesheets="@../styles/styles.css"
+            fx:controller="app.controllers.LoginController"
+            styleClass="root">
+
+    <!-- Center Content -->
+    <center>
+        <VBox alignment="CENTER" spacing="20">
+            <Text styleClass="heading">Delivery Defender</Text>
+            <Text styleClass="subheading">Your security, our priority." 🚛📦</Text>
+
+            <!-- Login Form -->
+            <VBox spacing="10" alignment="CENTER" styleClass="form-container" prefWidth="400" maxWidth="300">
+                <TextField fx:id="usernameField" promptText="Enter your username" styleClass="text-field" maxWidth="300"/>
+                <PasswordField fx:id="passwordField" promptText="Enter your password" styleClass="text-field" maxWidth="300"/>
+                <Button text="Login" onAction="#onLogin" styleClass="login-button" prefWidth="150"/>
+                <Hyperlink text="Forgot Password?" onAction="#onForgotPassword" styleClass="forgot"/>
+            </VBox>
+        </VBox>
+    </center>
+
+    <!-- Overlay Panel (For Design Only, Can Add Effects Later) -->
+    <bottom>
+        <VBox alignment="CENTER" spacing="10" styleClass="overlay-container">
+            <Label text="Not Registered Yet?" styleClass="overlay-text"/>
+            <Button text="Register Here" styleClass="ghost" onAction="#onRegister"/>
+        </VBox>
+    </bottom>
+
+
+</BorderPane>

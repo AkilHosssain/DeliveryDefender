@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="app.controllers.admin.InProgressPageController"
+      stylesheets="@../../styles/InProgressPage.css">
+    <Label text="In-Progress Tasks" styleClass="title-label"/>
+    <TableView fx:id="tasksTable">
+        <columns>
+            <TableColumn text="Order No" fx:id="orderNumber"/>
+            <TableColumn text="Customer Name" fx:id="customerName"/>
+            <TableColumn text="Address" fx:id="address"/>
+            <TableColumn text="Phone" fx:id="phoneNumber"/>
+            <TableColumn text="Delivery Date" fx:id="deliveryDate"/>
+            <TableColumn text="Time" fx:id="time"/>
+            <TableColumn text="Description" fx:id="description"/>
+            <TableColumn text="Driver" fx:id="driver"/>
+            <TableColumn text="Status" fx:id="status"/>
+        </columns>
+    </TableView>
+    <Button text="Back" onAction="#onBackClick" styleClass="back-button"/>
+</VBox>

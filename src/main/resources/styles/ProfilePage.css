@@ -1,0 +1,53 @@
+/* General Styles */
+.profile-container {
+    -fx-padding: 20px;
+    -fx-background-color: #f4f4f4;
+    -fx-border-radius: 10px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 10, 0, 0, 5);
+}
+
+/* Title Styling */
+.profile-title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333;
+}
+
+/* Label Styling */
+.label {
+    -fx-font-size: 16px;
+    -fx-text-fill: #444;
+}
+
+/* Hover Effects */
+.label:hover {
+    -fx-text-fill: #007acc;
+    -fx-font-weight: bold;
+}
+
+/* Box Styling */
+HBox {
+    -fx-padding: 10px;
+    -fx-background-color: #ffffff;
+    -fx-border-radius: 5px;
+    -fx-border-color: #ddd;
+    -fx-border-width: 1px;
+}
+
+/* Hover Effect on User Info Boxes */
+HBox:hover {
+    -fx-background-color: #e0f7fa;
+    -fx-border-color: #007acc;
+}
+.back-button {
+    -fx-background-color: #007acc;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 10px;
+    -fx-border-radius: 5px;
+    -fx-cursor: hand;
+}
+
+.back-button:hover {
+    -fx-background-color: #005f99;
+}

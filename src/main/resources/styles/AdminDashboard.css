@@ -1,0 +1,115 @@
+/* ==== Global AdminDashboard Styles ==== */
+.AdminDashboard-root {
+    -fx-font-family: 'Roboto', sans-serif; /* Modern font */
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #f0f0f0); /* Subtle gradient */
+    -fx-padding: 10px;
+}
+
+/* ==== Top Bar Styles ==== */
+.top-bar {
+    -fx-background-color: #2a2a2a; /* Sleek dark grey */
+    -fx-padding: 15px 25px;
+    -fx-alignment: center-left;
+    -fx-spacing: 10px;
+    -fx-pref-height: 50px; /* Adjust height */
+}
+
+.dashboard-title {
+    -fx-text-fill: #ffffff; /* White text */
+    -fx-font-size: 26px; /* Larger font size */
+    -fx-font-weight: bold;
+}
+
+/* ==== MenuBar and MenuItem Styles ==== */
+.menu-bar {
+    -fx-background-color: transparent; /* Transparent menu bar for seamless integration */
+}
+
+.menu-item {
+    -fx-text-fill: #f6f6f6; /* Light text color */
+    -fx-padding: 10px 15px;
+}
+
+.menu-item:hover {
+    -fx-background-color: #cac6c6; /* Light grey hover */
+    -fx-text-fill: #ffffff; /* White text on hover */
+    -fx-cursor: hand; /* Pointer cursor */
+}
+
+/* ==== Full-Screen Content Styles ==== */
+.full-screen-content {
+    -fx-background-color: #ffffff; /* Neutral white background */
+    -fx-padding: 20px; /* Comfortable padding */
+    -fx-border-color: #ddd; /* Subtle border for separation */
+    -fx-border-width: 1px;
+    -fx-border-radius: 10px; /* Rounded corners */
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 3, 0.3, 0, 1); /* Subtle shadow effect */
+}
+
+/* ==== Center Container Styles ==== */
+.center-container {
+    -fx-spacing: 20px; /* Space between elements */
+    -fx-padding: 30px; /* Comfortable padding */
+    -fx-background-color: #f7f7f7; /* Light grey background for sections */
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+}
+
+.section-header {
+     -fx-font-size: 22px; /* Slightly larger font */
+     -fx-font-weight: bold;
+     -fx-text-fill: #333; /* Balanced dark grey */
+     -fx-padding: 10px 0;
+ }
+
+/* ==== ListView Styles ==== */
+.info-list {
+    -fx-pref-height: 150px; /* Standard height for lists */
+    -fx-padding: 10px;
+    -fx-border-color: #ddd; /* Subtle border */
+    -fx-border-width: 1px;
+    -fx-border-radius: 8px; /* Rounded corners */
+    -fx-background-radius: 8px;
+    -fx-background-color: #ffffff; /* Neutral background color */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 3, 0.2, 0, 1); /* Soft shadow */
+}
+
+.info-list .list-cell:hover {
+    -fx-background-color: #edf6f9; /* Light blue hover */
+    -fx-text-fill: #007bff; /* Blue text on hover */
+    -fx-cursor: hand; /* Pointer cursor */
+}
+
+/* ==== Buttons for Actions ==== */
+.menu-button {
+    -fx-background-color: #5c5c5c; /* Neutral grey button */
+    -fx-text-fill: #e8e8e8; /* Light grey text */
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 5px; /* Rounded corners */
+    -fx-background-radius: 5px;
+    -fx-cursor: hand; /* Pointer cursor */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0.3, 0, 2); /* Subtle shadow */
+}
+
+.menu-button:hover {
+    -fx-background-color: #cac6c6; /* Light grey hover */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 5, 0.2, 0, 2); /* Elevated shadow */
+}
+
+.action-button {
+    -fx-background-color: #28a745; /* Green action button */
+    -fx-text-fill: white; /* White text */
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand; /* Pointer cursor */
+}
+
+.action-button:hover {
+    -fx-background-color: #218838; /* Darker green hover */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 8, 0.4, 0, 3); /* Strong shadow effect */
+}

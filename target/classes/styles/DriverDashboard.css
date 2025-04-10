@@ -1,0 +1,105 @@
+/* Root BorderPane Styles */
+.DriverDashboard-root {
+    -fx-background-color: #ffffff; /* Bright white for clean and modern look */
+    -fx-padding: 10px;
+}
+
+/* Top Menu Bar Styles */
+.top-menu {
+    -fx-background-color: #cdcdcd; /* Bold, vibrant orange-red for high visibility */
+    -fx-padding: 15px;
+    -fx-border-color: #cdcdcd; /* Slightly darker border for definition */
+    -fx-border-width: 0 0 4px 0; /* Thick bottom border for emphasis */
+}
+
+.top-menu .menu {
+    -fx-text-fill: #cdcdcd; /* White text for contrast */
+    -fx-font-size: 16px; /* Larger font for clarity */
+    -fx-font-weight: bold;
+}
+
+.top-menu .menu:hover {
+    -fx-background-color: #e63e00; /* Slightly darker orange for hover effect */
+    -fx-text-fill: #ffffdd; /* Softer white text */
+}
+
+/* Rider Name and ID Styles */
+.Rider-name {
+    -fx-font-size: 20px; /* Large font to grab attention */
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff; /* Keep text white to contrast with the vibrant background */
+    -fx-padding: 5px 10px; /* Add padding for spacing */
+}
+
+/* Welcome Section Styles */
+.additional-section {
+    -fx-background-color: #afafaf; /* Vibrant lime green for uplifting energy */
+    -fx-padding: 20px;
+    -fx-border-color: #afafaf; /* Subtle green border for separation */
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+    -fx-alignment: center;
+}
+
+.welcome-label {
+    -fx-font-size: 26px; /* Large font size for prominence */
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff; /* White text to stand out on lime green background */
+    -fx-text-alignment: center;
+    -fx-pref-height: 5px;
+}
+
+/* Tasks Container Styles */
+VBox#tasksContainer {
+    -fx-background-color: #ffffff; /* White background for clean task visibility */
+    -fx-padding: 20px;
+    -fx-border-color: #0078d4; /* Subtle blue border for structure */
+    -fx-border-width: 1px;
+    -fx-border-radius: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 10, 0.5, 0, 2);
+}
+
+/* Task Rows Styling */
+HBox {
+    -fx-background-color: #cdcdcd; /* Light peach for warmth and friendliness */
+    -fx-padding: 10px;
+    -fx-border-color: #ffd700; /* Golden border for brightness */
+    -fx-border-width: 0 0 2px 0; /* Bottom border only */
+    -fx-alignment: center-left;
+}
+
+HBox:hover {
+    -fx-background-color: #a6a6a5; /* Pale peach hover effect */
+}
+
+/* Labels in Each Row */
+Label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #333333; /* Neutral gray for readability */
+    -fx-padding: 0 10px; /* Add spacing between labels */
+}
+
+/* Special Message Styles */
+.no-tasks-label {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ff4500; /* Matches top menu bar for consistency */
+    -fx-alignment: center;
+    -fx-padding: 20px;
+    -fx-text-alignment: center;
+}
+
+/* Buttons (optional, if used later) */
+Button {
+    -fx-background-color: #9b9b9c; /* Vibrant blue */
+    -fx-text-fill: white; /* White text */
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-padding: 5px 15px;
+    -fx-border-radius: 5px;
+}
+
+Button:hover {
+    -fx-background-color: #75fafa; /* Darker blue on hover */
+    -fx-cursor: hand;
+}

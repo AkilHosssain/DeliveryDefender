@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="app.controllers.customer.CustomerTaskCreateFormController"
+      stylesheets="@../../styles/adminTaskCreateForm.css"
+      alignment="TOP_CENTER"
+      spacing="20"
+      styleClass="form-container"
+      prefWidth="400" prefHeight="750">
+
+    <!-- Title -->
+    <Label text="Create a New Order" styleClass="form-title"/>
+
+    <!-- Customer Name -->
+    <VBox spacing="5">
+        <Label text="Customer Name:"/>
+        <TextField fx:id="customerNameField" promptText="Enter customer name" styleClass="input-field"/>
+    </VBox>
+
+    <!-- Address -->
+    <VBox spacing="5">
+        <Label text="Address:"/>
+        <TextArea fx:id="addressArea" promptText="Enter address" styleClass="input-area" prefHeight="80"/>
+    </VBox>
+
+    <!-- Phone Number -->
+    <VBox spacing="5">
+        <Label text="Phone Number:"/>
+        <TextField fx:id="phoneNumberField" promptText="Enter phone number" styleClass="input-field"/>
+    </VBox>
+
+    <!-- Delivery Date -->
+    <VBox spacing="5">
+        <Label text="Delivery Date:"/>
+        <DatePicker fx:id="deliveryDatePicker" styleClass="input-field"/>
+    </VBox>
+
+    <!-- Delivery Time Frame -->
+    <VBox spacing="5">
+        <Label text="Delivery Time Frame:"/>
+        <HBox spacing="10">
+            <TextField fx:id="startTimeField" promptText="Start time (e.g., 3 PM)" styleClass="input-field"/>
+            <Label text="to"/>
+            <TextField fx:id="endTimeField" promptText="End time (e.g., 4 PM)" styleClass="input-field"/>
+        </HBox>
+    </VBox>
+
+    <!-- Task Description -->
+    <VBox spacing="5">
+        <Label text="Task Description:"/>
+        <TextArea fx:id="taskDescriptionArea" promptText="Enter task details" styleClass="input-area" prefHeight="100"/>
+    </VBox>
+
+
+    <!-- Buttons -->
+    <HBox spacing="20" alignment="CENTER">
+        <Button text="Save Order" onAction="#onSaveOrderClick" styleClass="submit-button"/>
+        <Button text="Cancel" onAction="#onCancelClick" styleClass="cancel-button"/>
+    </HBox>
+</VBox>

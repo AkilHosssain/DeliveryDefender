@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/src/main/java/app/controllers/LoginController.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/app/controllers/RegistrationController.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/app/controllers/admin/AdminDashboardController.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/app/controllers/admin/PendingTasksController.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/app/controllers/admin/ProfileController.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/app/controllers/customer/CompletedOrdersController.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/app/controllers/customer/CustomerDashboardController.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/app/controllers/customer/CustomerTaskCreateFormController.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/app/controllers/driver/DriverDashboardController.java" dialect="GenericSQL" />
+  </component>
+</project>

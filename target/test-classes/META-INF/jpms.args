@@ -1,0 +1,4 @@
+--patch-module
+deliverydefender=_
+--add-reads
+deliverydefender=ALL-UNNAMED

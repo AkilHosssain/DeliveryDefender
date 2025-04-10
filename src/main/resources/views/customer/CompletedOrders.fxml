@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="app.controllers.customer.CompletedOrdersController"
+            stylesheets="@../../styles/CompletedOrders.css"
+            prefHeight="700.0" prefWidth="1000.0">
+
+    <!-- Top Header -->
+    <top>
+        <HBox spacing="10" styleClass="header-container">
+            <Button fx:id="backButton" text="← Back" onAction="#onBackClick" styleClass="back-button"/>
+            <Label text="Completed Orders" styleClass="header-label"/>
+        </HBox>
+    </top>
+
+    <!-- Center Main Content -->
+    <center>
+        <VBox spacing="20" alignment="TOP_CENTER" styleClass="center-container">
+            <TableView fx:id="completedOrdersTable">
+                <columns>
+                    <TableColumn fx:id="orderNumberColumn" text="Order Number"/>
+                    <TableColumn fx:id="customerNameColumn" text="Customer Name"/>
+                    <TableColumn fx:id="addressColumn" text="Delivery Address"/>
+                    <TableColumn fx:id="phoneNumberColumn" text="Phone Number"/>
+                    <TableColumn fx:id="deliveryDateColumn" text="Delivery Date"/>
+                    <TableColumn fx:id="timeFrameColumn" text="Time Frame"/>
+                    <TableColumn fx:id="statusColumn" text="Status"/>
+                    <TableColumn fx:id="driverNameColumn" text="Driver"/>
+                </columns>
+            </TableView>
+        </VBox>
+    </center>
+</BorderPane>

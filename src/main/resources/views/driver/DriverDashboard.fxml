@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="app.controllers.driver.DriverDashboardController"
+            prefHeight="600" prefWidth="800"
+            styleClass="DriverDashboard-root"
+            stylesheets="@../../styles/DriverDashboard.css">
+
+    <!-- Top Menu -->
+    <top>
+        <MenuBar styleClass="top-menu">
+            <Menu fx:id="riderInfoMenu" text="Rider Name (ID)" styleClass="Rider-name">
+                <MenuItem text="Profile" onAction="#onProfileClick"/>
+                <Menu text="Settings">
+                    <MenuItem text="Change Map Settings" onAction="#onMapSettingsClick"/>
+                    <MenuItem text="Change Vehicle Type" onAction="#onVehicleSettingsClick"/>
+                    <MenuItem text="Delete Account" onAction="#onDeleteAccountClick"/>
+                </Menu>
+                <MenuItem text="Log Out" onAction="#onLogoutClick"/>
+            </Menu>
+        </MenuBar>
+    </top>
+
+    <!-- Center Content -->
+    <center>
+        <VBox spacing="20" alignment="TOP_CENTER">
+            <Label text="Keep delivering smiles!" styleClass="welcome-label"/>
+            <VBox fx:id="tasksContainer" spacing="10" alignment="CENTER"/>
+        </VBox>
+    </center>
+</BorderPane>

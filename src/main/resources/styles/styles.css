@@ -1,0 +1,187 @@
+/* ================= Global/Shared Styles ================= */
+/* Global root container for both pages */
+.root, .registration-root {
+    -fx-padding: 20px;
+    -fx-font-family: 'Montserrat', sans-serif;
+}
+
+/* ================= Login Page Styles ================= */
+/* Root styles for login page */
+.root {
+    -fx-background-color: #b8b8b8;
+}
+
+/* Centered content (main text and form) */
+.heading {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-fill: #333;
+}
+
+.subheading {
+    -fx-font-size: 14px;
+    -fx-fill: #131313;
+}
+
+/* Login form container */
+.form-container {
+    -fx-background-color: #ffffff;
+    -fx-padding: 20px;
+    -fx-border-radius: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0, 0, 0);
+}
+
+/* Input fields for Login (using .text-field class) */
+.text-field {
+    -fx-padding: 10px;
+    -fx-border-radius: 5px;
+    -fx-background-color: #eeeeee;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 1px;
+}
+
+.text-field:focused {
+    -fx-border-color: #007bff;
+}
+
+/* Login button styling */
+.login-button {
+    -fx-background-color: #d84012;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10px;
+    -fx-border-radius: 5px;
+    -fx-cursor: hand;
+    -fx-pref-width: 200px;
+}
+
+.login-button:hover {
+    -fx-background-color: #121111;
+}
+
+/* Forgot password link */
+.forgot {
+    -fx-text-fill: #d84012;
+    -fx-font-size: 12px;
+    -fx-cursor: hand;
+}
+
+.forgot:hover {
+    -fx-text-fill: #0b0b0b;
+}
+
+/* Overlay area (registration info at bottom) */
+.overlay-container {
+    -fx-background-color: #fc7341;
+    -fx-padding: 10px;
+    -fx-border-radius: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0, 0, 0);
+}
+
+.overlay-text {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+}
+
+.ghost {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-border-color: white;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-cursor: hand;
+}
+
+/* ================= Registration Page Styles ================= */
+/* Custom root for registration page */
+.registration-root {
+    -fx-background-color: #b8b8b8;
+    -fx-alignment: center;
+}
+
+/* Registration page heading */
+.registration-heading {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333;
+    -fx-padding-bottom: 10px;
+}
+
+/* Registration form container */
+.registration-form {
+    -fx-hgap: 15px;
+    -fx-vgap: 15px;
+    -fx-alignment: center;
+}
+
+/* For the form fields (TextField, PasswordField, ComboBox) */
+.form-field {
+    -fx-pref-width: 250px;
+    -fx-padding: 10px;
+    -fx-border-radius: 5px;
+    -fx-background-color: #ffffff;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 1px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 5, 0, 0, 2);
+}
+
+.form-field:focused {
+    -fx-border-color: #007bff;
+    -fx-effect: dropshadow(gaussian, rgba(0, 123, 255, 0.2), 8, 0, 0, 2);
+}
+
+/* Registration form labels */
+.registration-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #555;
+    -fx-font-weight: bold;
+}
+
+/* Styling for the ComboBox in the registration form */
+.combo-box {
+    -fx-pref-width: 250px;
+    -fx-padding: 10px;
+}
+
+/* Registration button styling */
+.register-button {
+    -fx-pref-width: 200px;
+    -fx-background-color: #007bff;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 12px;
+    -fx-border-radius: 30px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 5, 0, 0, 2);
+    -fx-scale-x: 1.0;
+    -fx-scale-y: 1.0;
+    -fx-transition: all 0.3s ease;
+}
+
+.register-button:hover {
+    -fx-background-color: #0056b3;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 8, 0, 0, 4);
+}
+
+/* Optional hyperlink for navigation (e.g., to login) */
+.link-login {
+    -fx-text-fill: #007bff;
+    -fx-font-size: 14px;
+    -fx-underline: true;
+    -fx-cursor: hand;
+}
+
+.link-login:hover {
+    -fx-text-fill: #0056b3;
+}
+
+.error-message {
+    -fx-text-fill: red;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 5px;
+}
+

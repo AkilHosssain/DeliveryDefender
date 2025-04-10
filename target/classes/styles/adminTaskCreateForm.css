@@ -1,0 +1,88 @@
+/* General Form Container */
+.form-container {
+    -fx-background-color: #ffffff;
+    -fx-padding: 20px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-border-color: #fc7341;
+    -fx-border-width: 2px;
+}
+
+/* Title Styling */
+.form-title {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ff4b2b;
+}
+
+/* Label Styling */
+.label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333;
+}
+
+/* Input Fields */
+.input-field, .input-area {
+    -fx-font-size: 14px;
+    -fx-padding: 8px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-border-color: #ccc;
+    -fx-border-width: 1px;
+}
+
+.input-field:focused, .input-area:focused {
+    -fx-border-color: #ff4b2b;
+    -fx-border-width: 2px;
+}
+
+/* Date Picker */
+.date-picker {
+    -fx-font-size: 14px;
+    -fx-padding: 8px;
+}
+
+/* Buttons */
+.submit-button {
+    -fx-background-color: #ff4b2b;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+}
+
+.submit-button:hover {
+    -fx-background-color: #fc7341;
+}
+
+.cancel-button {
+    -fx-background-color: #333;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+}
+
+.cancel-button:hover {
+    -fx-background-color: #555;
+}
+
+/* Assign Driver Button */
+.assign-button {
+    -fx-background-color: #fc7341;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 8px 15px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+}
+
+.assign-button:hover {
+    -fx-background-color: #ff4b2b;
+}

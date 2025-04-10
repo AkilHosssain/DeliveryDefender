@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import java.lang.String?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      stylesheets="@../styles/styles.css"
+      fx:controller="app.controllers.RegistrationController"
+      alignment="CENTER" spacing="20"
+      styleClass="registration-root">
+
+    <!-- Page heading -->
+    <Label text="Register Now" styleClass="registration-heading"/>
+
+    <!-- Form container as a two-column GridPane -->
+    <GridPane hgap="15" vgap="15" alignment="CENTER" styleClass="registration-form">
+        <!-- Name -->
+        <Label text="Name:" GridPane.rowIndex="0" GridPane.columnIndex="0" styleClass="registration-label"/>
+        <TextField fx:id="nameField" promptText="Enter your name" GridPane.rowIndex="0" GridPane.columnIndex="1" styleClass="form-field"/>
+
+        <!-- Email -->
+        <Label text="Email:" GridPane.rowIndex="1" GridPane.columnIndex="0" styleClass="registration-label"/>
+        <TextField fx:id="emailField" promptText="Enter your email" GridPane.rowIndex="1" GridPane.columnIndex="1" styleClass="form-field"/>
+
+        <!-- Password -->
+        <Label text="Password:" GridPane.rowIndex="2" GridPane.columnIndex="0" styleClass="registration-label"/>
+        <PasswordField fx:id="passwordField" promptText="Enter your password" GridPane.rowIndex="2" GridPane.columnIndex="1" styleClass="form-field"/>
+
+        <!-- Confirm Password -->
+        <Label text="Confirm Password:" GridPane.rowIndex="3" GridPane.columnIndex="0" styleClass="registration-label"/>
+        <PasswordField fx:id="confirmPasswordField" promptText="Confirm your password" GridPane.rowIndex="3" GridPane.columnIndex="1" styleClass="form-field"/>
+
+        <!-- Contact Number -->
+        <Label text="Contact Number:" GridPane.rowIndex="4" GridPane.columnIndex="0" styleClass="registration-label"/>
+        <TextField fx:id="contactField" promptText="Enter your contact number" GridPane.rowIndex="4" GridPane.columnIndex="1" styleClass="form-field"/>
+
+        <!-- Address -->
+        <Label text="Address:" GridPane.rowIndex="5" GridPane.columnIndex="0" styleClass="registration-label"/>
+        <TextField fx:id="addressField" promptText="Enter your Full address" GridPane.rowIndex="5" GridPane.columnIndex="1" styleClass="form-field"/>
+
+        <!-- Role selection dropdown -->
+        <Label text="Role:" GridPane.rowIndex="6" GridPane.columnIndex="0" styleClass="registration-label"/>
+        <ComboBox fx:id="roleComboBox" GridPane.rowIndex="6" GridPane.columnIndex="1" styleClass="form-field">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="Customer"/>
+                    <String fx:value="Driver"/>
+                    <String fx:value="Admin"/>
+                </FXCollections>
+            </items>
+        </ComboBox>
+        <Label fx:id="errorLabel" GridPane.rowIndex="7" GridPane.columnIndex="1" text="" styleClass="error-message" />
+    </GridPane>
+
+    <!-- Register Button -->
+    <Button fx:id="registerButton" text="Register" onAction="#onRegister" styleClass="register-button"/>
+
+    <!-- Optional: Link to Login Page -->
+    <Hyperlink text="Already have an account? Login here" onAction="#onLoginPage" styleClass="link-login"/>
+</VBox>
